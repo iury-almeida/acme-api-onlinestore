@@ -1,7 +1,11 @@
 'use strict';
 
-const testeRoute = require('../core/funcionality/routes');
+const customerPaymentInfoRoutes = require('../core/customerPaymentInfo/customerPaymentInfoRoutes');
+const checkout = require('../core/checkout/checkoutRoutes');
+const serviceProduct = require('../core/serviceProduct/serviceProductRoutes');
 
 module.exports = (app) => {
-    testeRoute(app);
+    customerPaymentInfoRoutes(app);
+    checkout(app);
+    serviceProduct(app);
 }
